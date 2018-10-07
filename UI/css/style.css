@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	transition: all .3s;
+}
+
+body{
+
+	background: #333;
+}
+
+.form{
+	width: 400px;
+	margin: 50px auto;
+	background: #fff;
+	text-align: center;
+	padding: 10px;
+
+}
+
+input{
+
+	width: 80%;
+	padding: 8px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+button{
+	background: #50BFA4;
+	width: 60%;
+	padding: 10px;
+	color: #fff
+	border:0;
+	outline: 0;
+	font-weight: bold;
+	margin: 5px;
+	cursor:pointer;
+
+}
+button:hover{
+	background: #279574;
+
+}
+
+.forgot{
+	margin: 5px;
+}
+
+.forgot a{
+	text-decoration: none;
+	color: #555	
+}
+
+.forgot a:hover{
+	color: #ccc
+}
+
+.login{
+	margin: 5px;
+	color: #333;
+}
+
+.login a{
+	margin: 8px;
+	padding: 6px;
+	border: 1px solid #50BFA4;
+	text-decoration: none;
+	color: #50BFA4;
+	font-weight: bold;
+}
+
+.login a:hover{
+	background: #50BFA4;
+	color: #fff
+}
