@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive vertical menu navigation</title>
+		<link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('.close').click(function() {
+					$('.ad').css('display', 'none');
+				})
+			})
+		</script>
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<span>Brand</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<span>STORE</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Products</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<span>Items Sold</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Create Sales Record </span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Employees</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<div class="title">
+				Store DashBoard	
+			</div>
+			<div class="main">
+				<div class="widget">
+					<div class="title">Items Sold</div>
+					<div class="chart"></div>
+				</div>
+				<div class="widget">
+					<div class="title">Sales Record</div>
+					<div class="chart"></div>
+				</div>
+				<div class="widget">
+					<div class="title">Employees</div>
+					<div class="chart"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
