@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive vertical menu navigation</title>
+		<link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('.close').click(function() {
+					$('.ad').css('display', 'none');
+				})
+			})
+		</script>
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<span>Brand</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<span>STORE</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Products</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<span>Items Sold</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Create Sales Record </span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Employees</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<div class="title">
+				Store DashBoard	
+			</div>
+			<div class="main">
+				<div class="widget">
+					<div class="title">Product Inventory List</div>
+					<div class="chart"></div>
+
+<table id="t01">
+  <tr>
+    <th>Product Name</th>
+    <th>Category</th> 
+    <th>Cost Price</th>
+    <th>In Stock</th> 
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>Espresso</td>
+    <td>beverage</td>
+    <td>Ksh 150</td>
+    <td>0</td>
+    <td>
+
+   <input type="submit" value="Edit" class="button1"/>
+   <input type="submit" value="Delete" class="button2"/>
+	
+    </td>
+  </tr>
+  <tr>
+    <td>Soda</td>
+    <td>beverage</td>
+    <td>Ksh 120</td>
+    <td>6</td>
+    <td>
+
+   <input type="submit" value="Edit" class="button1"/>
+   <input type="submit" value="Delete" class="button2"/>
+
+    </td>
+  </tr>
+  <tr>
+    <td>Lemon Mandazi</td>
+    <td>snacks</td>
+    <td>Ksh 180</td>
+    <td>7</td>
+    <td>
+
+   <input type="submit" value="Edit" class="button1"/>
+   <input type="submit" value="Delete" class="button2"/>
+
+    </td>
+  </tr>
+</table>
+
+
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

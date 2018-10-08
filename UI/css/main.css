@@ -213,3 +213,41 @@ body {
 }
 
 
+table {
+    width:100%;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: #35475e;
+    color: white;
+}
+
+.button1
+{
+    font-size: 13px;
+    color:green;
+}
+
+.button2
+{
+    font-size: 13px;
+    color:red;
+}
+
+
+
+
