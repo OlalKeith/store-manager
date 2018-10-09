@@ -333,3 +333,30 @@ input[type=text] {
 .main-nav li:hover .sub-arrow:after {
 	content: '\2039';
 }
+
+div.text { 
+  margin: 0; 
+  padding: 0; 
+  padding-bottom: 1.25em;
+  margin-top: 0.2em;
+} 
+
+div.text label { 
+  margin: 0; 
+  padding: 0; 
+  display: block; 
+  font-size: 100%; 
+  padding-top: .1em; 
+  padding-right: .25em; 
+  width: 6em; 
+  text-align: left; 
+  float: left; 
+} 
+
+div.text input, 
+div.text textarea { 
+  margin: 0; 
+  padding: 0; 
+  display: block; 
+  font-size: 100%; 
+}

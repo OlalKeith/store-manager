@@ -28,19 +28,17 @@
 			<div class="logo">
 				<span>STORE</span>
 			</div>
-			<nav class="main-nav">
-				<ul class="main-nav-ul">
+			<nav>
+				<ul>
 					<li>
-						<a href="#">
-							<span>Users</span>
+						<a href="index.html">
+							<span>Dashboard</span>
 						</a>
 					</li>
 					<li>
-					<a href="#">Products<span class="sub-arrow"></span></a>
-					<ul>
-					<li><a href="createproduct.html">CreateProduct</a></li>
-					</ul>
-
+						<a href="products.html">
+							<span>Products</span>
+						</a>
 					</li>
 					<li class="active">
 						<a href="#">
@@ -53,7 +51,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="employee.html">
 							<span>Employees</span>
 						</a>
 					</li>
@@ -66,54 +64,26 @@
 			</div>
 			<div class="main">
 				<div class="widget">
-					<div class="title">Product Inventory List</div>
+					<div class="title">Create Product</div>
 					<div class="chart"></div>
 
-<table id="t01">
-  <tr>
-    <th>Product Name</th>
-    <th>Category</th> 
-    <th>Cost Price</th>
-    <th>In Stock</th> 
-    <th>Action</th>
-  </tr>
-  <tr>
-    <td>Espresso</td>
-    <td>beverage</td>
-    <td>Ksh 150</td>
-    <td>0</td>
-    <td>
+<div class="text"> 
+    <label for="comment">Product Name:</label> 
+    <input type="text" size="30" name="name" id="name"/> 
+</div><br>
 
-   <input type="submit" value="Edit" class="button1"/>
-   <input type="submit" value="Delete" class="button2"/>
-	
-    </td>
-  </tr>
-  <tr>
-    <td>Soda</td>
-    <td>beverage</td>
-    <td>Ksh 120</td>
-    <td>6</td>
-    <td>
+<div class="text"> 
+    <label for="comment">Category:</label> 
+    <input type="text" size="30" name="name" id="name"/>  
+</div><br>
 
-   <input type="submit" value="Edit" class="button1"/>
-   <input type="submit" value="Delete" class="button2"/>
+<div class="text"> 
+    <label for="comment">Cost Price:</label> 
+   <input type="text" size="25" name="email" id="email"/> 
+</div>
 
-    </td>
-  </tr>
-  <tr>
-    <td>Lemon Mandazi</td>
-    <td>snacks</td>
-    <td>Ksh 180</td>
-    <td>7</td>
-    <td>
-
-   <input type="submit" value="Edit" class="button1"/>
-   <input type="submit" value="Delete" class="button2"/>
-
-    </td>
-  </tr>
-</table>
+  <input type="submit" value="submit" class="button1"/>
+   <input type="submit" value="cancel" class="button2"/>
 
 
 				</div>
