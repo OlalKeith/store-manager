@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive vertical menu navigation</title>
+		<link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('.close').click(function() {
+					$('.ad').css('display', 'none');
+				})
+			})
+		</script>
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<span>Brand</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<span>STORE</span>
+			</div>
+			<nav class="main-nav">
+				<ul class="main-nav-ul">
+					<li>
+						<a href="#">
+							<span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Products</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<span>Items Sold</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Create Sales Record </span>
+						</a>
+					</li>
+					<li>
+						<a href="#">Employees<span class="sub-arrow"></span></a>
+												
+		<ul>
+         	<li><a href="#">CreateEmployee</a></li>
+ <!--            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li> -->
+         </ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<div class="title">
+				Employees	
+			</div>
+			<div class="main">
+				<div class="widget">
+					<div class="title">Add, Edit, Delete Employees</div>
+					<div class="chart"></div>
+
+<table id="t01">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Address</th> 
+    <th>Phone</th>
+    <th>Gender</th> 
+    <th>Date of Joining</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+  	<th>1</th>
+    <td>Employee1</td>
+    <td>Address01</td>
+    <td>123456</td>
+    <td>M</td>
+    <td>2018-01-01</td>
+    <td>
+
+<button class="button1" onclick="document.getElementById('modal-wrapper').style.display='block'">
+Edit</button>
+
+   <div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <h3 style="text-align:center">Edit Employee</h3>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="ID" name="IDname">
+      <input type="text" placeholder="Name" name="pname"> 
+      <input type="text" placeholder="Address" name="pname"> 
+      <input type="text" placeholder="Phone" name="pname">
+      <input type="text" placeholder="Gender" name="pname">         
+      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Update</button>
+    </div>
+    
+  </form>
+  
+</div>
+
+    </td>
+  </tr>
+  <tr>
+  	<th>2</th>
+    <td>Employee2</td>
+    <td>Address02</td>
+    <td>123457</td>
+    <td>F</td>
+    <td>2018-01-02</td>
+    <td>
+
+<button class="button1" onclick="document.getElementById('modal-wrapper').style.display='block'">
+Edit</button>
+
+    </td>
+  </tr>
+  <tr>
+  	<th>3</th>
+    <td>Employee3</td>
+    <td>Address03</td>
+    <td>123458</td>
+    <td>F</td>
+    <td>2018-01-03</td>
+    <td>
+
+<button class="button1" onclick="document.getElementById('modal-wrapper').style.display='block'">
+Edit</button>
+
+    </td>
+  </tr>
+</table>
+
+
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
