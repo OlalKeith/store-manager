@@ -1,66 +1,55 @@
- 
 body{
-
-    margin: 0;
-    paddin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #d5dae5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: gr
+margin: 0;
+paddin: 0;
+font-family: 'Source Sans Pro', sans-serif;
+background-color: #d5dae5;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: gr
 }
-
 form
 {
-    text-align: justify;
+text-align: justify;
 }
 h1{
 text-align: center;
 text-transform: capitalize;
-color: #fff 
-} 
+color: #fff
+}
 h2 {
-	text-align: center;
-    color: #50BFA4;
+text-align: center;
+color: #50BFA4;
 }
- 
+
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
-
 /* Create three equal columns that floats next to each other */
-
-
-/* Clear floats after the columns */ 
+/* Clear floats after the columns */
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+float: left;
+width: 25%;
+padding: 10px;
+height: 300px; /* Should be removed. Only for demonstration */
 }
-
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-} 
+content: "";
+display: table;
+clear: both;
+}
 .heading
 {
-    padding-left: 20px; 
-    text-align: left;
-} 
+padding-left: 20px;
+text-align: left;
+}
 .items
 {
-
-   padding-left: 20px; 
-    text-align: left; 
-    color: #fff
+padding-left: 20px;
+text-align: left;
+color: #fff
 }
-
 .submit{
-    width:100px;
-    margin:0 50%;
-    position:relative;
-    left:-50px;
+width:100px;
+margin:0 50%;
+position:relative;
+left:-50px;
 }
-
-

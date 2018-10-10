@@ -28,7 +28,7 @@
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav-ul">
-					<li class="active">
+					<li>
 						<a href="index.html">
 							<span>Dashboard</span>
 						</a>
@@ -50,14 +50,12 @@
 							<span>Sales Records </span>
 						</a>
 					</li>
-					<li>
-						<a href="employees.html">Employees<span class="sub-arrow"></span></a>
-						
+					<li class="active">
+						<a href="employee.html">Employees<span class="sub-arrow"></span></a>
 						<ul>
 							<li><a href="createemployee.html">CreateEmployee</a></li>
 						</ul>
 					</li>
-					
 					<li>
 						<a>Category<span class="sub-arrow"></span></a>
 						<ul>
@@ -69,22 +67,21 @@
 		</div>
 		<div class="main-content">
 			<div class="title">
-				Store DashBoard
+				Category
 			</div>
 			<div class="main">
 				<div class="widget">
-					<div class="title">Items Sold</div>
+					<div class="title">Create Category</div>
 					<div class="chart"></div>
+					<form action="/action_page.php">
+						Category Name: <input type="text" name="pin" maxlength="4" size="4"><br>
+						Prodcut Name: <input type="text" name="pin" maxlength="4" size="4"><br>
+						<input type="submit" value="Submit">
+					</form>
 				</div>
-				<div class="widget">
-					<div class="title">Sales Record</div>
-					<div class="chart"></div>
-				</div>
-				<div class="widget">
-					<div class="title">Employees</div>
-					<div class="chart"></div>
-				</div>
+				
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
