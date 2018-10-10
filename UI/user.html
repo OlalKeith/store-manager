@@ -30,16 +30,17 @@
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav-ul">
-					<li>
+					<li class="active">
 						<a href="index.html">
 							<span>Dashboard</span>
 						</a>
 					</li>
 					<li>
-					<a href="#">Products<span class="sub-arrow"></span></a>
+					<a href="products.html">Products<span class="sub-arrow"></span></a>
 					<ul>
 					<li><a href="createproduct.html">CreateProduct</a></li>
 					<li><a href="productslist.html">ProductInventory</a></li>
+
 					</ul>
 
 					</li>
@@ -48,13 +49,13 @@
 							<span>User</span>
 						</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="salesrecords.html">
 							<span>Sales Records </span>
 						</a>
 					</li>
 					<li>
-						<a href="employee.html">Employees<span class="sub-arrow"></span></a>
+					<a href="employees.html">Employees<span class="sub-arrow"></span></a>
 												
 		<ul>
          	<li><a href="createemployee.html">CreateEmployee</a></li>
@@ -65,15 +66,31 @@
 		</div>
 		<div class="main-content">
 			<div class="title">
-				Sales	
+				My Profile
 			</div>
 			<div class="main">
 				<div class="widget">
-					<div class="title">Sales Records For Store Attendants</div>
+					<div class="title" style="background-color: #90EE90" >Employee Information</div>
 					<div class="chart"></div>
 
+  <form action="/action_page.php">
+  IdNo: <input type="text" placeholder="1" name="pin" maxlength="4" size="4"><br>
+  Name: <input type="text" placeholder="employee1" name="pin" maxlength="4" size="4"><br>
+  Phone: <input type="text" placeholder="12345" name="pin" maxlength="4" size="4"><br>
+<div class="text"> 
+    <label for="comment">Address:</label> 
+    <textarea rows="3" cols="50" name="comment" placeholder="Address01" id="comment"></textarea> 
+</div>
+  <input type="submit" value="Save">
+</form> 
+
+				</div>
+				<div class="widget">
+					<div class="title">Sales Record</div>
+					<div class="chart"></div>
 <table id="t01">
-  <tr>
+
+<tr>
     <th>Id</th>
     <th>Name</th>
     <th>Product</th> 
@@ -82,6 +99,7 @@
     <th>Total Price </th>
     <th>Date</th>
   </tr>
+
   <tr>
   	<th>1</th>
     <td>Employee1</td>
@@ -94,67 +112,41 @@
 
     <tr>
   	<th>2</th>
-    <td>Employee2</td>
+    <td>Employee1</td>
     <td>Water</td>
     <td>6</td>
     <td>30</td>
      <td>120</td>
     <td>2018-01-02</td>
   </tr>
+
     <tr>
   	<th>3</th>
-    <td>Employee3</td>
+    <td>Employee1</td>
     <td>GroundNuts</td>
     <td>10</td>
     <td>5</td>
      <td>50</td>
     <td>2018-01-03</td>
   </tr>
+
+  <tr>
     <th>4</th>
-    <td>Employee4</td>
+    <td>Employee1</td>
     <td>GroundNuts</td>
     <td>10</td>
     <td>5</td>
      <td>50</td>
     <td>2018-01-03</td>
   </tr>
-    <tr>
-  	<th>5</th>
-    <td>Employee5</td>
-    <td>Soda</td>
-    <td>5</td>
-    <td>20</td>
-    <td>100</td>
-    <td>2018-01-01</td>
-  </tr>
+	
 
-    <tr>
-  	<th>6</th>
-    <td>Employee6</td>
-    <td>Water</td>
-    <td>6</td>
-    <td>30</td>
-     <td>120</td>
-    <td>2018-01-02</td>
-
-  </tr>
-
-    <tr>
-  	<th>7</th>
-    <td>Employee7</td>
-    <td>GroundNuts</td>
-    <td>10</td>
-    <td>5</td>
-     <td>50</td>
-    <td>2018-01-03</td>
-  </tr>
-      
 </table>
 
-				</div>
-					
+
+
 				</div>
 			</div>
+		</div>
 	</body>
 </html>
-
