@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Store</title>
+    <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.close').click(function() {
+          $('.ad').css('display', 'none');
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <span>Brand</span>
+      </div>
+      <a href="#" class="nav-trigger"><span></span></a>
+    </div>
+    <div class="side-nav">
+      <div class="logo">
+        <span>STORE</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-ul">
+          <li>
+            <a href="products.html">
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="products.html">Products<span class="sub-arrow"></span></a>
+            <ul>
+              <li><a href="createproduct.html">CreateProduct</a></li>
+              <li><a href="productslist.html">ProductInventory</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="user.html">
+              <span>User</span>
+            </a>
+          </li>
+          <li>
+            <a href="salesrecords.html">
+              <span>Sales Records </span>
+            </a>
+          </li>
+          <li>
+            <a href="employee.html">Employees<span class="sub-arrow"></span></a>
+            
+            <ul>
+              <li><a href="createemployee.html">CreateEmployee</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="categorylist.html">CategoryList<span class="sub-arrow"></span></a>
+            <ul>
+              <li><a href="createcategory.html">Createcategory</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="title">
+        Store DashBoard
+                                            <a href="index.html">
+                        <span onclick="hide/(); return false" style="float: right;">Sign Out</span> 
+                    </a>
+      </div>
+      <div class="main">
+        <div class="widget">
+          <div class="title">Product Inventory List
+
+          </div>
+          <div class="chart"></div>
+          <table id="t01">
+            <tr>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Cost Price</th>
+              <th>In Stock</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Espresso</td>
+              <td>beverage</td>
+              <td>Ksh 150</td>
+              <td>0</td>
+              <td>
+                <input type="submit" value="Delete" class="button2"/>
+                <button class="button1" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                Edit</button>
+                <div id="modal-wrapper" class="modal">
+                  
+                  <form class="modal-content animate" action="/">
+                    
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                      <h3 style="text-align:center">Edit Product</h3>
+                    </div>
+                    <div class="container">
+                      <input type="text" placeholder="Espresso" name="IDname">
+                      <input type="text" placeholder="beverage" name="pname">
+                      <input type="text" placeholder="Ksh 150" name="pname">
+                      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Edit</button>
+                      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Cancel</button>
+                    </div>
+                    
+                  </form>
+                  
+                </div>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>Soda</td>
+              <td>beverage</td>
+              <td>Ksh 120</td>
+              <td>6</td>
+              <td>
+                <input type="submit" value="Delete" class="button2"/>
+                <button class="button1" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                Edit</button>
+                <div id="modal-wrapper" class="modal">
+                  
+                  <form class="modal-content animate" action="/">
+                    
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                      <h3 style="text-align:center">Edit Product</h3>
+                    </div>
+                    <div class="container">
+                      <input type="text" placeholder="Soda" name="IDname">
+                      <input type="text" placeholder="beverage" name="pname">
+                      <input type="text" placeholder="Ksh 120" name="pname">
+                      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Edit</button>
+                      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Cancel</button>
+                    </div>
+                    
+                  </form>
+                  
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Lemon Mandazi</td>
+              <td>snacks</td>
+              <td>Ksh 180</td>
+              <td>7</td>
+              <td>
+                <input type="submit" value="Delete" class="button2"/>
+                <button class="button1" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                Edit</button>
+                <div id="modal-wrapper" class="modal">
+                  
+                  <form class="modal-content animate" action="/">
+                    
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                      <h3 style="text-align:center">Edit Product</h3>
+                    </div>
+                    <div class="container">
+                      <input type="text" placeholder="Lemon Mandazi" name="IDname">
+                      <input type="text" placeholder="snacks" name="pname">
+                      <input type="text" placeholder="Ksh 180" name="pname">
+                      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Edit</button>
+                      <button type="submit" style="text-decoration:none; float:right; margin-right:34px; margin-top:5px;">Cancel</button>
+                    </div>
+                    
+                  </form>
+                  
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

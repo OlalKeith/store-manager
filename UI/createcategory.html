@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Store</title>
+		<link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.close').click(function() {
+					$('.ad').css('display', 'none');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<span>Brand</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<span>STORE</span>
+			</div>
+			<nav class="main-nav">
+				<ul class="main-nav-ul">
+					<li>
+						<a href="products.html">
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="products.html">Products<span class="sub-arrow"></span></a>
+						<ul>
+							<li><a href="createproduct.html">CreateProduct</a></li>
+							<li><a href="productslist.html">ProductInventory</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="user.html">
+							<span>User</span>
+						</a>
+					</li>
+					<li>
+						<a href="salesrecords.html">
+							<span>Sales Records </span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="employee.html">Employees<span class="sub-arrow"></span></a>
+						<ul>
+							<li><a href="createemployee.html">CreateEmployee</a></li>
+						</ul>
+					</li>
+					<li>
+            <a href="categorylist.html">CategoryList<span class="sub-arrow"></span></a>
+						<ul>
+							<li><a href="createcategory.html">Createcategory</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<div class="title">
+				Category
+				                                    <a href="index.html">
+                        <span onclick="hide/(); return false" style="float: right;">Sign Out</span> 
+                    </a>
+			</div>
+			<div class="main">
+				<div class="widget">
+					<div class="title">Create Category
+					</div>
+					<div class="chart"></div>
+					<form action="/action_page.php">
+						Category Name: <input type="text" name="pin" maxlength="4" size="4"><br>
+						Prodcut Name: <input type="text" name="pin" maxlength="4" size="4"><br>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
